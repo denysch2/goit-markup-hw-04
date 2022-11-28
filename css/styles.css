@@ -355,15 +355,21 @@ border: none;
         display: flex;
         justify-content: center;
         align-items: center;
+
+    }
+   .team-soc-link:hover {
+   color: var (--accent--header--color--)
+  }
+    .team-soc-icon {
+        fill: #afb1b8;
+    }
+    .team-soc-icon:hover {
+        fill: var(--accent--header--color--)
+    }
     
-    }
-    .team-soc-link:hover
-      {
-      color: var(--accent--header--color--)
-    }
        /* ~~~~~~~~~~~~~~~~~~CLIENTS~~~~~~~~~~~~~~~~~~~ */
-       .client {
-        
+       .client .list {
+        display: flex;
         padding-top: 94px;
      padding-bottom: 94px;
        }
@@ -381,9 +387,7 @@ border: none;
         align-items: center;
         height: 92px;
     }
-     .client-item{
-        margin-left: 30px;
-    }
+     
     
     .link-company {
         display: flex;
@@ -393,6 +397,10 @@ border: none;
         height: 92px;
         border: 1px solid #AFB1B8;
     border-radius: 4px;
+    color: #AFB1B8;
+    }
+    .client-item + .client-item {
+        margin-left: 30px;
     }
     .client .link-company:hover {
         border-color: solid var(--accent--header--color--);
@@ -408,8 +416,16 @@ border: none;
     background-color: var(--footer--bgr--color--);
     padding-bottom: 40px;
     }
+    .container-adress {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 48px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
     .footer-logo {
-     display: block;
+        display: inline-block;
      margin-bottom: 28px;
      font-family: 'Raleway';
      font-weight: 700;
