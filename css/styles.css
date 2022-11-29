@@ -355,15 +355,13 @@ border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        color: #AFB1B8;
+fill: currentColor;
     }
    .team-soc-link:hover {
    color: var (--accent--header--color--)
   }
-    .team-soc-icon {
-        fill: #afb1b8;
-    }
-    .team-soc-icon:hover {
+    .team-soc-link:hover {
         fill: var(--accent--header--color--)
     }
     
@@ -412,49 +410,86 @@ border: none;
     
     /*~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~*/
     .footer{
-     padding-top: 60px;
-    background-color: var(--footer--bgr--color--);
-    padding-bottom: 40px;
-    }
-    .container-adress {
+        padding-top: 60px;
+       background-color: var(--footer--bgr--color--);
+       padding-bottom: 40px;
+       }
+       .footer-conteiner {
         display: flex;
-        justify-content: space-between;
+        justify-content: baseline;
         align-items: baseline;
-        padding-top: 48px;
-        padding-bottom: 28px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
-    .footer-logo {
+
+       }
+       .footer-address {
+        display: block;
+       }
+       .footer-logo {
+           display: inline-block;
+        margin-bottom: 28px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+       color: var(--footer--logo--);
+        text-decoration: none;
+        }
+        .footer-span-logo {
+            color: var( --accent--header--color--);
+        }
+       .footer-maps {
+        display: block;
+        margin-bottom: 12px;
+       font-style: normal;
+       color: var(--primary--acent--btn--color--);
+       }
+       .footer-link {
+        display: block;
+        font-style: normal;
+       color: var(--footer--link--);
+       }
+       .footer-mail {
+        margin-bottom: 12px;
+       }
+       .footer-icon {
+        margin-left: 70px;
+        color: #FFFFFF;
+       }
+    .footer-join {
         display: inline-block;
-     margin-bottom: 28px;
-     font-family: 'Raleway';
-     font-weight: 700;
-     font-size: 26px;
-     line-height: 1.19;
-     letter-spacing: 0.03em;
-    color: var(--footer--logo--);
-     text-decoration: none;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF; 
+    }
+
+    .footer-icon-list {
+        display: flex;
+    }
+    .footer-icon-list .item + .item {
+        margin-left: 10px;
+      }
+    .footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color); 
      }
-     .footer-span-logo {
-         color: var( --accent--header--color--);
-     }
-    .footer-maps {
-     display: block;
-     margin-bottom: 12px;
-    font-style: normal;
-    color: var(--primary--acent--btn--color--);
-    }
-    .footer-link {
-     display: block;
-     font-style: normal;
-    color: var(--footer--link--);
-    }
-    .footer-mail {
-     margin-bottom: 12px;
-    }
-  
-    
-    
+   .icon-link {
+    fill: currentColor;
+   }
+   .footer-icon-link:hover, .footer-icon-link:focus {
+    background-color: #2196F3;
+   }
+
+
    /*~~~~~~~~~~~~~~~~~~~PORTFOLIO~~~~~~~~~~~~*/
    .portfolio {
     padding-top: 94px;
