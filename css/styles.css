@@ -367,11 +367,10 @@ fill: currentColor;
     
        /* ~~~~~~~~~~~~~~~~~~CLIENTS~~~~~~~~~~~~~~~~~~~ */
        .client  {
-       
         padding-top: 94px;
      padding-bottom: 94px;
        }
-    .client .client-title {
+    .client-title {
         margin-bottom: 50px;
         text-align: center;
         font-weight: 700;
@@ -381,33 +380,33 @@ fill: currentColor;
     }
     .client-list {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 92px;
     }
-     
-    
-    .link-company {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       width: 170px;
-        height: 92px;
-        border: 1px solid #AFB1B8;
+
+ .link-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
-    }
-    .client-item + .client-item {
-        margin-left: 30px;
-    }
-    .client .link-company:hover {
-        border-color: solid var(--accent--header--color--);
-        color: var(--accent--header--color--);
-    }
-    .client-icon {
-        fill: currentColor;
-    }
-    
+ }
+  .client-item + .client-item {
+    margin-left: 30px;
+} 
+.client-icon {
+    fill: currentColor;
+  }
+.link-company:hover,
+.link-company:focus {
+    border-color: solid var(--accent--header--color--);
+    color: var(--accent--header--color--);
+  }
+
+
+
+
     /*~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~*/
     .footer{
         padding-top: 60px;
