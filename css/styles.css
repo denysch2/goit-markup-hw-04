@@ -14,8 +14,8 @@
     --cap--bgr--focus--: #188CE8;
 --filter--btn--focus--: #2196F3;
 --filter--bgr--color--: #F5F4FA;
----primary--border-color: #EEEEEE
-
+---primary--border-color: #EEEEEE;
+--link--icon--color: #AFB1B8;
 
    }
    p, h1, h2, h3, h4, h5, h6{
@@ -317,7 +317,7 @@ border: none;
     .work-item{
      margin-top: 0;
      background-color: var(--footer--logo--);
-     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 0px 0px 4px 4px;
     }
     .team-our {
@@ -355,7 +355,7 @@ border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #AFB1B8;
+        color: var(--link--icon--color);
 fill: currentColor;
     }
    .team-soc-link:hover {
@@ -388,9 +388,9 @@ fill: currentColor;
     align-items: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--link--icon--color);
     border-radius: 4px;
-    color: #AFB1B8;
+    color: var(--link--icon--color);
  }
   .client-item + .client-item {
     margin-left: 30px;
@@ -452,7 +452,7 @@ fill: currentColor;
        }
        .footer-icon {
         margin-left: 70px;
-        color: #FFFFFF;
+        color: var(--footer--logo--);
        }
     .footer-join {
         display: inline-block;
@@ -462,7 +462,7 @@ fill: currentColor;
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #FFFFFF; 
+        color: var(--footer--logo--); 
     }
 
     .footer-icon-list {
@@ -485,7 +485,7 @@ fill: currentColor;
     fill: currentColor;
    }
    .footer-icon-link:hover, .footer-icon-link:focus {
-    background-color: #2196F3;
+    background-color: var(--accent--header--color--);
    }
 
 
