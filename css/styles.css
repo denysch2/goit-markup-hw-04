@@ -142,13 +142,19 @@ img {
     }
 
     .mail-icon {
-        fill: currentColor;
+        display: inline-block;
         margin-right: 10px;
-        padding-top: 2px;
+        fill: currentColor; 
+        height: 12px;
+        width: 16px;
+     
     }
-
+.header-mail .header-tel {
+    align-items: center;
+}
     .header-mail {
         display: flex;
+        align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -157,6 +163,7 @@ img {
     }
     .header-tel {
         display: flex;
+        align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -307,7 +314,8 @@ border: none;
     color: var(--primary--title--color--);
     }
     .team-list {
-     display: flex;    
+     display: flex; 
+       
     }
  
     .team-list .item + .item {
@@ -316,6 +324,7 @@ border: none;
     }
     .work-item{
      margin-top: 0;
+     
      background-color: var(--footer--logo--);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 0px 0px 4px 4px;
@@ -329,7 +338,7 @@ border: none;
     color: var(--primary--title--color--);
     }
     .work-pre {
-     padding-bottom: 30px;
+     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
     color: var(--primary--header--color--);
@@ -338,12 +347,12 @@ border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        margin-bottom: 30px; 
     }
     .team-soc-item {
         width: 44px;
         height: 44px;
-        margin-bottom: 30px;
+        
     }
     
     .team-soc-list .team-soc-item + .team-soc-item {
@@ -358,10 +367,8 @@ border: none;
         color: var(--link--icon--color);
 fill: currentColor;
     }
-   .team-soc-link:hover {
-   color: var (--accent--header--color--)
-  }
-    .team-soc-link:hover {
+   
+    .team-soc-link:hover, .team-soc-link:focus {
         fill: var(--accent--header--color--)
     }
     
@@ -415,7 +422,7 @@ fill: currentColor;
        }
        .footer-conteiner {
         display: flex;
-        justify-content: baseline;
+        
         align-items: baseline;
 
        }
@@ -530,6 +537,10 @@ fill: currentColor;
 border-radius: 4px;
    }
 
+   .filter-link:hover, .filter-link:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
    .port-list {
     display: flex;
     flex-wrap: wrap;
