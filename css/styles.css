@@ -350,7 +350,7 @@ border: none;
     .team-soc-item {
         width: 44px;
         height: 44px;
-        
+    
     }
     
     .team-soc-list .team-soc-item + .team-soc-item {
@@ -361,19 +361,20 @@ border: none;
         height: 100%;
         display: flex;
         justify-content: center;
+        border-radius: 50%;
         align-items: center;
         color: var(--link--icon--color);
-fill: currentColor;
+
     }
    
   
-    .team-soc-link:hover,
-    .team-soc-link:focus,
-    .team-soc-icon:hover,
-    .team-soc-icon:focus {
-        fill: var(--accent--header--color--)
+    .team-soc-link:hover, .team-soc-link:focus {
+        background-color: var(--accent--header--color--);
+    color: var(--filter--bgr--color--);
     }
-    
+    .team-soc-icon {
+        fill: currentColor;
+    }
        /* ~~~~~~~~~~~~~~~~~~CLIENTS~~~~~~~~~~~~~~~~~~~ */
        .client  {
         padding-top: 94px;
@@ -541,7 +542,7 @@ border-radius: 4px;
 
    .web-list:hover, .web-list:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+
 }
    .port-list {
     display: flex;
